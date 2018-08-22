@@ -20,3 +20,5 @@ Create your virtual environment by running
 ### Output
 
 A `data.json` file will be created once the script is executed. The file is in JSON format and has the following structure:
+
+![image text](https://monosnap.com/image/Xox3SMoZL9v5WYKXWRN3SSXdLZw0UW.png)
