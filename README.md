@@ -21,4 +21,54 @@ Create your virtual environment by running
 
 A `data.json` file will be created once the script is executed. The file is in JSON format and has the following structure:
 
-![image text](https://monosnap.com/image/Xox3SMoZL9v5WYKXWRN3SSXdLZw0UW.png)
+```
+[
+  {
+    "reviews": [
+      "review_header": "",
+      "review_text": "",
+      "review_comment_count": "",
+      "review_posted_date" "",
+      "review_rating": "",
+      "review_author" ""
+    ],
+    "ratings": {
+      "2 star": "4%",
+      "1 star": "10%",
+      "4 star": "17%",
+      "3 star": "5%",
+      "5 star": "64%"
+    },
+    "price": "",
+    "url": "",
+    "name": ""
+  },
+  ...
+]
+```
+
+Example of json file with scraped data:
+```
+[
+  {
+    "reviews": [
+      "review_header": "Best phone I have owned ever",
+      "review_text": "I love this iPhone X",
+      "review_comment_count": "",
+      "review_posted_date" "19 Jul 2017",
+      "review_rating": "5.0",
+      "review_author" "Mart"
+    ],
+    "ratings": {
+      "2 star": "4%",
+      "1 star": "10%",
+      "4 star": "17%",
+      "3 star": "5%",
+      "5 star": "64%"
+    },
+    "price": "",
+    "url": "http://www.amazon.com/dp/B01ETPUQ6E",
+    "name": "iPhone X - No Contract Phone - White - (AT&T)(Carrier locked phone)"
+  }
+]
+```
