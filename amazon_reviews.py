@@ -118,13 +118,9 @@ def ParseReviews(asin):
 	# return {"error":"failed to process the page","asin":asin}
 
 def ReadAsin():
-
   user_input = raw_input("Enter amazon ASIN in one line using commas:\n")
   input_list = user_input.split(',')
-  numbers = [x.strip() for x in input_list]
-
-  #Add your own ASINs here
-  AsinList = numbers
+  AsinList = [x.strip() for x in input_list]
   extracted_data = []
   for asin in AsinList:
     print("Downloading and processing page http://www.amazon.com/dp/" + asin)
