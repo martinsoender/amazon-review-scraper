@@ -118,15 +118,20 @@ def ParseReviews(asin):
 	# return {"error":"failed to process the page","asin":asin}
 
 def ReadAsin():
-	#Add your own ASINs here
-	AsinList = ['B01ETPUQ6E','B017HW9DEW']
-	extracted_data = []
-	for asin in AsinList:
-		print("Downloading and processing page http://www.amazon.com/dp/" + asin)
-		extracted_data.append(ParseReviews(asin))
-		sleep(5)
-	f = open('data.json', 'w')
-	json.dump(extracted_data, f, indent=4)
+
+  user_input = raw_input("Enter amazon ASIN in one line using commas:\n")
+  input_list = user_input.split(',')
+  numbers = [x.strip() for x in input_list]
+
+  #Add your own ASINs here
+  AsinList = numbers
+  extracted_data = []
+  for asin in AsinList:
+    print("Downloading and processing page http://www.amazon.com/dp/" + asin)
+    extracted_data.append(ParseReviews(asin))
+    sleep(5)
+  f = open('data.json', 'w')
+  json.dump(extracted_data, f, indent=4)
 
 if __name__ == '__main__':
 	ReadAsin()
