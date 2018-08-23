@@ -69,6 +69,7 @@ Example of json file with scraped data:
     "price": "",
     "url": "http://www.amazon.com/dp/B01ETPUQ6E",
     "name": "iPhone X - No Contract Phone - White - (AT&T)(Carrier locked phone)"
-  }
+  },
+  ...
 ]
 ```
