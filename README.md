@@ -73,3 +73,11 @@ Example of json file with scraped data:
   ...
 ]
 ```
+
+## How to find the ASIN product number
+
+A url from Amazon might look something like below:
+
+https://www.amazon.com/Apple-iPhone-Silver-Certified-Refurbished/dp/B07D6TQP6F/ref=sr_1_1_sspa?s=wireless&ie=UTF8&qid=1535029477&sr=1-1-spons&keywords=iphone+x&psc=1&smid=A1B2EE2P0I30OG
+
+Where we want to grab the number after `dp/` as that's the product ASIN.
